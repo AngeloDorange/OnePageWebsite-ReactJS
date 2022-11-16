@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.prod{
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prod .title{
+    text-align: center;
+    padding-top: 6.5rem;
+}
+.prod .title h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.prod .title p{
+    font-size: 1rem;
+    color: #6d6d6d;
+    padding-top: 1.1rem;
+}
+
+
+.cards .card1, .cards .card2{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 3%;
+    height: auto;
+    overflow: hidden;
+    padding: 1rem 8%;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+.cards .card2{
+    grid-template-columns: 60% 35%;
+    background: #eee;
+    margin-top: 5rem;
+    padding-bottom: 6.5rem;
+    padding: 8% 1rem;
+}
+.cards .card1 .img, .cards .card2 .img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.cards .card1 .img img, .cards .card2 .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card1 .text, .card2 .text{
+    padding-top: 10%;
+}
+.card1 .text h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.card1 .text p:nth-child(3){
+    padding-top: 1.5rem;
+    font-size: 1rem;
+}
+.card1 .text p{
+    font-size: 1.1rem;
+}
+.card1 .text p small{
+    color: #1fb5f6;
+}
+
+.card2 .text h2{
+    font-size: 1.5rem;
+}
+
+.card2 .text .content{
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1023px){
+    .cards .card1, .cards .card2{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .prod .title h1{
+        font-size: 1.7rem;
+    }
+    .prod .title p{
+        font-size: 0.7rem;
+    }
+}
+

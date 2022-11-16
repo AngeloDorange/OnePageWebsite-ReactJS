@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.company{
+    background: #f1faff;
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.company .title{
+    text-align: center;
+    padding-top: 7rem;
+}
+.company .title h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.company .title p{
+    font-size: 1rem;
+    color: #6d6d6d;
+    padding-top: 1.1rem;
+}
+
+
+.company .content{
+    padding-bottom: 3.5rem;
+}
+
+.company .content .client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    overflow: hidden;
+}
+.company .content .client li{
+    margin: 10px 15px;
+}
+
+
+@media (max-width: 600px){
+    .company .title h1{
+        font-size: 1.7rem;
+    }
+    .company .title p{
+        font-size: 0.7rem;
+    }
+}

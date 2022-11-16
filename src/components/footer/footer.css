@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.foot{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #3f5267;
+    color: #74889e;
+    font-family: 'Montserrat', sans-serif;
+}
+.foot .content{
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+}
+.foot .parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 8%;
+    overflow: hidden;
+}
+.foot .parts h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.foot .parts .part1{
+    flex-direction: column;
+    text-align: justify;
+}
+
+.parts h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #1fb5f6;
+    margin: 1rem 0px;
+}
+
+.part1 .about p{
+    padding-top: 3.5rem;
+    line-height: 1.7;
+}
+.part1 .copy::before{
+    
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #1fb5f6;
+    margin: -1rem 0px;
+}
+.part1 .copy{
+    padding-top: 3rem;
+    line-height: 1.7;
+}
+.part1 .copy span{
+    color: #1fb5f6;
+}
+
+
+.part2 .adress ul{
+    padding-top: 3.5rem;
+    line-height: 1.7;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.part2 .adress ul li i{
+    color: #1fb5f6;
+    font-size: 1.3rem;
+    margin-right: .8rem;
+}
+
+
+.connect{
+    padding-top: 2rem;
+}
+.part2 .connect .social{
+    margin-top: 1.5rem;
+    justify-content: start;
+}
+.part2 .social li a{
+    color: #1fb5f6;
+    font-size: 1.5rem;
+    margin: .4rem .5rem;
+}
+.part2 .social li a:hover{
+    color: #fff;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: 3.5rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    background: #485b71;
+    resize: none;
+    font-size: 1.2rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+input::placeholder, textarea::placeholder{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.btn-message{
+    color: #fff;
+    background: #ff0000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.btn-message:hover{
+    background: #111;
+    border: none;
+}
+
+
+
+@media (max-width: 1024px){
+    .foot .parts{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .foot .parts{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,44 @@
+.sign__free{
+    background-color: #1fb5f6;
+}
+
+.started{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: none;
+    width: 100%;
+    height: auto;
+    padding: 3rem 8%;
+    overflow: hidden;
+}
+
+.started .title{
+    color: #fff;
+}
+.started .title h1{
+    letter-spacing: 2px;
+}
+.started .title p{
+    padding-top: 1.5rem;
+    line-height: 1.7;
+    color: #eee;
+}
+
+.btn-second{
+    color: #fff;
+    background: crimson;
+    border: none;
+    box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.8);
+}
+.btn-second:hover{
+    background-color: #111;
+    border: none;
+}
+
+@media (max-width: 768px){
+    .started{
+        height: auto;
+    }
+}

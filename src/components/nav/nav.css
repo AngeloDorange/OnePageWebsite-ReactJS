@@ -1,0 +1,102 @@
+nav{
+   width: 100%;
+   height: 11vh;
+    display: flex;
+    padding: 0px 4%;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: 999;
+    box-shadow: 0 -5px 10px crimson;
+}
+
+.logo a{
+    color: #111;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 70px;
+    margin-right: 10rem;
+}
+.logo span{
+    color: crimson;
+}
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 70px;
+}
+nav a{
+    line-height: 70px;
+    padding: 5px 10px;
+    color: #6d6d6d;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+nav a:hover{
+    color: #000;
+    font-weight: 300;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+nav ul a.active::before{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: crimson;
+    position: absolute;
+    bottom: 15px;
+}
+
+nav ul .sign{
+    border: 2px solid crimson;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+nav ul .sign:hover{
+    background: crimson;
+    color: #fff;
+    border: none;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+nav button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: none;
+}
+nav button img{
+    height: 30px;
+    width: 30px;
+    background: #000;
+}
+

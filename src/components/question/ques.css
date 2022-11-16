@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.faq{
+    background: #fff;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.faq .title{
+    text-align: center;
+    padding-top: 7rem;
+}
+.faq .title h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.faq .title p{
+    font-size: 1rem;
+    color: #aaa;
+    padding-top: 1.1rem;
+}
+
+
+.quest{
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    
+}
+.questions{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    margin: 10px;
+    padding: 1rem 8%;
+    overflow: hidden;
+}
+
+.questions .question h1{
+    text-align: start;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+.questions .question p{
+    color: #6d6d6d;
+    padding-top: .8rem;
+    line-height: 1.6;
+    text-align: justify;
+    font-weight: 300;
+}
+
+
+@media (max-width: 1023px){
+    .questions{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .questions{
+        grid-template-columns: 1fr;
+        text-align: justify;
+    }
+    .faq .title h1{
+        font-size: 1.7rem;
+    }
+    .faq .title p{
+        font-size: 0.7rem;
+    }
+}
